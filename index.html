@@ -1,30 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>PDF Unlocker</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>PDF Password Remover</h1>
 
-<div class="container">
-    <h1>PDF Password Remover</h1>
+      <input type="file" id="pdfFile" accept=".pdf" />
 
-    <input type="file" id="pdfFile" accept=".pdf">
+      <input type="password" id="password" placeholder="Enter PDF Password" />
 
-    <input
-        type="password"
-        id="password"
-        placeholder="Enter PDF Password"
-    >
+      <button id="unlockBtn">Unlock PDF</button>
 
-    <button id="unlockBtn">
-        Unlock PDF
-    </button>
+      <p id="status"></p>
+    </div>
 
-    <p id="status"></p>
-</div>
-
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
