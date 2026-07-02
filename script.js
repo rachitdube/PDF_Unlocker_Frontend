@@ -17,10 +17,13 @@ button.addEventListener("click", async () => {
   status.innerText = "Processing...";
 
   try {
-    const response = await fetch("http://localhost:8000/unlock", {
-      method: "POST",
-      body: formData,
-    });
+    const response = await fetch(
+      "https://pdf-unlocker-backend-sj4e.onrender.com/unlock",
+      {
+        method: "POST",
+        body: formData,
+      },
+    );
 
     if (!response.ok) {
       const error = await response.json();
